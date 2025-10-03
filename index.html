@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
     <title>Katrina Moody</title>
 </head>
 <body>
@@ -11,10 +12,10 @@
         <h1 class="logo">KATRINA MOODY</h1>
         <div class="nav-links">
             
-            <a href="#">About
+            <a href="#about">About
                 <div id="about-light"></div>
             </a>
-            <a href="#">Work
+            <a href="#work">Work
                 <div id="work-light"></div>
             </a>
             <a href="#">Skills
@@ -26,7 +27,7 @@
         </div>
     </nav>
 
-    <header>
+    <header id="about">
         <div class="hero-text">
             <h1>HI THERE!</h1>
             <p>Welcome to my portfolio! My name is Katrina Moody, I'm a professional web developer who is on the lookout for new opportunities to learn and grow in development.</p>
@@ -35,6 +36,42 @@
             <div alt="A picture of me">Image of ME</div>
         </div>
     </header>
+
+    <section id="work" class="carousel">
+
+    </section>
+
+
+    <section id="skills">
+        <div class="left">
+            <div class="heading">Skills I've used in past projects</div>
+            <div class="skills-desc">Description talking about what I've used</div>
+        </div>
+        <div class="right">Div that stores icons or badges of langs/libraries/etc used</div>
+    </section>
+
+    <section id="contact">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <div class="contact-right">
+            <div class="graphic">Some sort of radiowave graphic here</div>
+            <div class="contact-desc">Description</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Website Designed and Created by Katrina Moody</p>
+    </footer>
     
 </body>
 </html>
