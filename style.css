@@ -69,3 +69,71 @@ header {
     height: 100%;
     justify-self: center;
 }
+
+/* /////////// SKILLS ///////////// */
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 80vw;
+    height: 30vh;
+    padding: 3% 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.left * {
+    border: 1px solid lightblue;
+}
+
+.left .heading {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 4px;
+}
+
+.left .skills-desc {
+    font-size: 2rem;
+    flex-wrap: wrap;
+}
+
+.right {
+    border: 2px solid green;
+    width: 45%;
+}
+
+/* /////////// CONTACT ///////////// */
+#contact {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+    margin: auto;
+    padding: 6% 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 45vh;
+}
+
+.contact-right {
+    border: 2px solid green;
+}
+
+.contact-right * {
+    border: 1px solid lightskyblue;
+}
+
+/* //////////// FOOTER ////////// */
+footer {
+    text-align: center;
+}
