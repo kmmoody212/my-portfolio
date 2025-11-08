@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #E4A788;
+    --secondary-color: #F7EDE2;
+    --text-color: #3A3A3A;
+    --accent-color: #89B0AE;
+
+} 
+
 body {
     margin: 0;
     background-color: #E4A788;
