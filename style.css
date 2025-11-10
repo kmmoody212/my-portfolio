@@ -8,19 +8,22 @@
 
 body {
     margin: 0;
-    background-color: #E4A788;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 /* //////////// NAVBAR ///////////// */
 
 nav {
-    position: absolute;
+    margin: auto;
+    margin-top: 20px;
     z-index: 2;
     display: flex;
-    width: 100%;
+    width: 80vw;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.512);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 6px;
 }
 
 nav > h1 {
@@ -39,35 +42,72 @@ nav > h1 {
 a {
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
 }
 
 
 /* ///////////// HERO //////////////// */
 
 header {
-    padding-top: 23vh;
-    height: 55vh;
-    background-image: url(./assets/close-up-modern-office-buildings-shanghai.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-top: 10vh;
+    padding-bottom: 3%;
+    margin: auto;
+    max-width: 80vw;
     
 }
 
+.hero-h1 {
+    font-size: 6em;
+    margin: 0;
+}
+
+.sub-heading {
+    font-size: 3rem;
+    margin: 0;
+}
+
 .hero-text {
-    text-align: center;
-    padding: 2%;
-    max-width: 85vw;
-    max-height: 45vh;
-    margin: auto;
+    padding: 1.5rem 0 2rem 0;
+    max-width: 35vw;
+}
+
+.hero-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
 
 }
 
-.hero-text * {
-    background-color: rgba(35, 48, 78, 0.512);
+/* //////////// ABOUT //////////// */
+#about {
+    width: 80vw;
+    margin: 3% auto;
+    background: var(--secondary-color);
     padding: 2rem;
-    max-width: 70%;
-    margin: auto;
+    border-radius: 8px;
+}
+
+.title {
+    margin: 0;
+}
+
+.about-content {
+    display: flex;
+    gap: 12px;
+    justify-content: space-evenly;
+
+}
+
+.temp-img {
+    min-width: 200px;
+    min-height: 250px;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    margin-top: 1rem;
+    margin-right: 2rem;
 }
 
 /* .self-img {
@@ -85,7 +125,7 @@ header {
 } */
 
 /* /////////// SKILLS ///////////// */
-#skills {
+/* #skills {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
@@ -120,7 +160,7 @@ header {
 .right {
     border: 2px solid green;
     width: 45%;
-}
+} */
 
 /* /////////// CONTACT ///////////// */
 #contact {
@@ -149,5 +189,7 @@ form {
 
 /* //////////// FOOTER ////////// */
 footer {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
