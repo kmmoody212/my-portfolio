@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
+    </style>
     <script src="index.js" defer></script>
     <title>Katrina Moody</title>
-</head>
-<body>
-    <nav>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">{KM}</h1>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#">Skills</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1 class="hero-h1">HI, I'M KATRINA.</h1>
+        <p class="sub-heading">A FULL-STACK DEVELOPER WITH A CREATIVE EDGE.</p>
+        <p class="hero-text">
+          Welcome to my portfolio! I began learning coding in 2023, but wasn't
+          able to really dive in until 2024. Since then, I have been coding as
+          much as I possibly can in my spare time. Please look around my
+          portfolio for a snippet into some of the things I've accomplished!
+        </p>
+        <button class="hero-btn">View My work</button>
+      </div>
+    </header>
+    <!-- <nav>
         <h1 class="logo">{KM}</h1>
         <div class="nav-links">
             
@@ -25,65 +50,67 @@
             <p class="sub-heading">A Front-End Developer with a Creative Edge</p>
             <p class="hero-text">Welcome to my portfolio! I began learning coding in 2023, but wasn't able to really dive in until 2024. Since then, I have been coding as much as I possibly can in my spare time. Please look around my portfolio for a snippet into some of the things I've accomplished!</p>
             <button class="hero-btn">View My work</button>
-    </header>
+    </header> -->
 
     <section id="about">
-        <h4 class="title">
-            ABOUT
-        </h4>
-        <div class="about-content">
-            <div class="temp-img"></div>
-            <div class="about-right">
-                <h2>A little about me</h2>
-                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum earum, distinctio libero velit sit similique quam perferendis aliquid excepturi, sed officia reiciendis alias ratione pariatur culpa nisi cumque doloremque quos laudantium fugiat eos eaque ab reprehenderit? Cum, consequuntur ullam.</p>
-                <button class="about-btn">Download Resume</button>
-            </div>
+      <h4 class="title">ABOUT</h4>
+      <div class="about-content">
+        <div class="temp-img"></div>
+        <div class="about-right">
+          <h2>A little about me</h2>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            laborum earum, distinctio libero velit sit similique quam
+            perferendis aliquid excepturi, sed officia reiciendis alias ratione
+            pariatur culpa nisi cumque doloremque quos laudantium fugiat eos
+            eaque ab reprehenderit? Cum, consequuntur ullam.
+          </p>
+          <button class="about-btn">Download Resume</button>
         </div>
+      </div>
     </section>
 
-
-
-    <section id="projects" >
-        <h4 class="title">
-            PROJECTS
-        </h4>
-        <div class="carousel">PUT SLIDE OF CARDS HERE - might make have them created in javascript</div>
+    <section id="projects">
+      <h4 class="title">PROJECTS</h4>
+      <div class="carousel">
+        PUT SLIDE OF CARDS HERE - might make have them created in javascript
+      </div>
     </section>
-
 
     <section id="skills">
-        <h4 class="title">SKILLS</h4>
-        <div class="skills-left">Technical Skills
-            <div>LIST OF TECH SKILLS</div>
-        </div>
-        <div class="skills-right">Soft Skills
-            <div>LIST OF SOFT SKILLS</div>
-        </div>
+      <h4 class="title">SKILLS</h4>
+      <div class="skills-left">
+        Technical Skills
+        <div>LIST OF TECH SKILLS</div>
+      </div>
+      <div class="skills-right">
+        Soft Skills
+        <div>LIST OF SOFT SKILLS</div>
+      </div>
     </section>
 
     <section id="contact">
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
 
-            <button type="submit">Send</button>
-        </form>
-        <div class="contact-right">
-            <div class="graphic">Some sort of radiowave graphic here</div>
-            <div class="contact-desc">Description</div>
-        </div>
+        <button type="submit">Send</button>
+      </form>
+      <div class="contact-right">
+        <div class="graphic">Some sort of radiowave graphic here</div>
+        <div class="contact-desc">Description</div>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Website Designed and Created by Katrina Moody</p>
-        <div class="sms-icons">GitHub, LinkedIn, email links</div>
+      <p>&copy; 2025 Website Designed and Created by Katrina Moody</p>
+      <div class="sms-icons">GitHub, LinkedIn, email links</div>
     </footer>
-    
-</body>
+  </body>
 </html>

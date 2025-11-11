@@ -1,113 +1,115 @@
 :root {
-    --primary-color: #E4A788;
-    --secondary-color: #F7EDE2;
-    --text-color: #3A3A3A;
-    --accent-color: #89B0AE;
-
-} 
+  --primary-color: #e4a788;
+  --secondary-color: #f7ede2;
+  --text-color: #3a3a3a;
+  --accent-color: #89b0ae;
+}
 
 body {
-    margin: 0;
-    background-color: var(--primary-color);
-    color: var(--text-color);
+  margin: 0;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-optical-sizing: auto;
+  background-color: var(--text-color);
+  color: var(--text-color);
+}
+
+header {
+  padding-bottom: 3%;
+  margin: auto;
+  background-image: url(./assets/gradient-earth-tone-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* //////////// NAVBAR ///////////// */
-
 nav {
-    margin: auto;
-    margin-top: 20px;
-    z-index: 2;
-    display: flex;
-    width: 80vw;
-    justify-content: space-between;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    border-radius: 6px;
+  margin: auto;
+  padding: 0 2%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color);
 }
 
 nav > h1 {
-    padding-left: 2rem;
+  font-size: 2.5rem;
+  padding: 0 2%;
 }
 
 .nav-links {
-    display: flex;
-    width: 30%;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  font-size: 1.25rem;
 }
 
 a {
-    text-align: center;
-    text-decoration: none;
-    color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
 }
-
 
 /* ///////////// HERO //////////////// */
-
-header {
-    padding-top: 10vh;
-    padding-bottom: 3%;
-    margin: auto;
-    max-width: 80vw;
-    
+.hero {
+  margin: 10vh 5vw 5vh 5vw;
 }
-
 .hero-h1 {
-    font-size: 6em;
-    margin: 0;
+  font-family: "Inconsolata", monospace;
+  font-weight: 200;
+  font-size: 5em;
+  margin: 0;
 }
 
 .sub-heading {
-    font-size: 3rem;
-    margin: 0;
+  font-family: "Inconsolata", monospace;
+  font-weight: 200;
+  font-size: 2.25rem;
+  margin: 0;
+  letter-spacing: 0.25rem;
 }
 
 .hero-text {
-    padding: 1.5rem 0 2rem 0;
-    max-width: 35vw;
+  padding: 1.5rem 0 2rem 0;
+  max-width: 35vw;
 }
 
 .hero-btn {
-    padding: 12px 24px;
-    border-radius: 8px;
-    border: none;
-    background-color: var(--accent-color);
-    color: white;
-    cursor: pointer;
-
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
 }
 
 /* //////////// ABOUT //////////// */
 #about {
-    width: 80vw;
-    margin: 3% auto;
-    background: var(--secondary-color);
-    padding: 2rem;
-    border-radius: 8px;
+  width: 80vw;
+  margin: 3% auto;
+  background: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 8px;
 }
 
 .title {
-    margin: 0;
+  margin: 0;
 }
 
 .about-content {
-    display: flex;
-    gap: 12px;
-    justify-content: space-evenly;
-
+  display: flex;
+  gap: 12px;
+  justify-content: space-evenly;
 }
 
 .temp-img {
-    min-width: 200px;
-    min-height: 250px;
-    border-radius: 6px;
-    background-color: var(--accent-color);
-    margin-top: 1rem;
-    margin-right: 2rem;
+  min-width: 200px;
+  min-height: 250px;
+  border-radius: 6px;
+  background-color: var(--accent-color);
+  margin-top: 1rem;
+  margin-right: 2rem;
 }
 
 /* .self-img {
@@ -125,71 +127,79 @@ header {
 } */
 
 /* /////////// SKILLS ///////////// */
-/* #skills {
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 80vw;
-    height: 30vh;
-    padding: 3% 0;
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 80vw;
+  height: 30vh;
+  padding: 3% 0;
+  background-color: var(--secondary-color);
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid green;
-    justify-content: space-around;
-    width: 45%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid green;
+  justify-content: space-around;
+  width: 45%;
 }
 
 .left * {
-    border: 1px solid lightblue;
+  border: 1px solid lightblue;
 }
 
 .left .heading {
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 4px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 4px;
 }
 
 .left .skills-desc {
-    font-size: 2rem;
-    flex-wrap: wrap;
+  font-size: 2rem;
+  flex-wrap: wrap;
 }
 
 .right {
-    border: 2px solid green;
-    width: 45%;
-} */
+  border: 2px solid green;
+  width: 45%;
+}
+
+/* /////////// PROJECTS //////////// */
+#projects {
+  background-color: var(--secondary-color);
+}
 
 /* /////////// CONTACT ///////////// */
 #contact {
-    display: flex;
-    justify-content: space-evenly;
-    width: 70vw;
-    margin: auto;
-    padding: 6% 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70vw;
+  margin: auto;
+  padding: 6% 0;
+  color: white;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 45%;
-    height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 45%;
+  height: 45vh;
 }
 
 .contact-right {
-    border: 2px solid green;
+  border: 2px solid green;
 }
 
 .contact-right * {
-    border: 1px solid lightskyblue;
+  border: 1px solid lightskyblue;
 }
 
 /* //////////// FOOTER ////////// */
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--secondary-color);
 }
