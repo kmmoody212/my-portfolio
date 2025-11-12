@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #e4a788;
+  --primary-color: #e5cec2;
   --secondary-color: #f7ede2;
   --text-color: #3a3a3a;
-  --accent-color: #89b0ae;
+  --accent-color: #89a6b0;
 }
 
 body {
@@ -88,13 +88,21 @@ a {
 #about {
   width: 80vw;
   margin: 3% auto;
-  background: var(--secondary-color);
+  background: #e5cec2;
+  background: linear-gradient(
+    173deg,
+    rgba(229, 206, 194, 1) 0%,
+    rgba(245, 250, 255, 1) 100%
+  );
   padding: 2rem;
   border-radius: 8px;
 }
 
 .title {
   margin: 0;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
 }
 
 .about-content {
