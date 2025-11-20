@@ -185,6 +185,107 @@ a {
   justify-self: center;
 }
 
+/* /////////// PROJECTS //////////// */
+#projects-container {
+  color: white;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-btn {
+  background: #ddd;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  background: #ccc;
+}
+
+.project-card {
+  min-width: 300px;
+  flex-shrink: 1;
+}
+
+.proj-image {
+  border: 2px solid white;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 4px 8px;
+  border: 2px solid white;
+}
+
+.top-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-line * {
+  margin: 0;
+  padding: 4px 0 0 0;
+}
+
+.proj-role {
+  font-style: italic;
+}
+
+.desc-title {
+  margin: 16px 0 0 0;
+}
+
+.proj-desc {
+  font-size: 0.85rem;
+  padding-top: 4px;
+  margin: 0;
+}
+
+.tech-title {
+  margin: 16px 0 0 0;
+}
+
+.proj-tech {
+  font-size: 0.85rem;
+  padding-top: 4px;
+  margin: 0;
+}
+
+.proj-links {
+  margin: 16px auto;
+  justify-self: center;
+}
+
+.proj-links * {
+  border: 2px solid yellow;
+  color: white;
+  text-decoration: none;
+  margin: auto 16px;
+}
+
 /* /////////// SKILLS ///////////// */
 #skills {
   display: flex;
@@ -222,11 +323,6 @@ a {
 .right {
   border: 2px solid green;
   width: 45%;
-}
-
-/* /////////// PROJECTS //////////// */
-#projects {
-  background-color: var(--secondary-color);
 }
 
 /* /////////// CONTACT ///////////// */

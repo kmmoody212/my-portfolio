@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
@@ -34,6 +39,7 @@
       </div>
     </header>
 
+    <!-- ////////// ABOUT SECTION //////////  -->
     <section id="about">
       <h3 class="title">ABOUT</h3>
       <div class="y-line"></div>
@@ -63,31 +69,22 @@
       <button class="resume">Download Resume</button>
     </section>
 
-    <!-- <section id="about">
-      <h2 class="title">ABOUT</h2>
-      <div class="about-content">
-        <div class="temp-img"></div>
-        <div class="about-right">
-          <h2>A little about me</h2>
-          <p class="about-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            laborum earum, distinctio libero velit sit similique quam
-            perferendis aliquid excepturi, sed officia reiciendis alias ratione
-            pariatur culpa nisi cumque doloremque quos laudantium fugiat eos
-            eaque ab reprehenderit? Cum, consequuntur ullam.
-          </p>
-          <button class="about-btn">Download Resume</button>
-        </div>
-      </div>
-    </section> -->
+    <!-- ////////// PROJECTS SECTION //////////// -->
 
     <section id="projects-container">
       <h4 class="title">PROJECTS</h4>
-      <div class="carousel">
-        PUT SLIDE OF CARDS HERE - might make have them created in javascript
+      <div class="swiper">
+        <!-- slider main container -->
+        <div class="swiper-wrapper" id="swiper-wrapper">
+          <!-- swiper-slide 's go in here -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
 
+    <!-- ////////// SKILLS SECTION /////////// -->
     <section id="skills">
       <h4 class="title">SKILLS</h4>
       <div class="skills-left">
@@ -99,6 +96,8 @@
         <div>LIST OF SOFT SKILLS</div>
       </div>
     </section>
+
+    <!-- ////////// CONTACT SECTION ////////// -->
 
     <section id="contact">
       <form>
@@ -124,5 +123,27 @@
       <div class="sms-icons">GitHub, LinkedIn, email links</div>
     </footer>
     <script src="index.js" type="module"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      // Initialize Swiper
+      new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: { slidesPerView: 1.25 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+    </script>
   </body>
 </html>

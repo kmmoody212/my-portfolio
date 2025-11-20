@@ -1,10 +1,12 @@
 import { projects } from "./src/projects.js";
 import { renderCard } from "./src/cardFactory.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("projects-container");
+const wrapper = document.getElementById("swiper-wrapper");
 
+// projects.forEach((project) => wrapper.appendChild(renderCard(project)));
+
+document.addEventListener("DOMContentLoaded", () => {
   return projects
     .map((project) => renderCard(project))
-    .forEach((card) => container.appendChild(card));
+    .forEach((card) => wrapper.appendChild(card));
 });

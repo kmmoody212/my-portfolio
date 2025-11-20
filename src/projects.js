@@ -1,6 +1,6 @@
 export const projects = [
   {
-    image: "screenshot",
+    image: "screenshot here",
     title: "Hair By Glinda",
     role: "Developer",
     desc: "A website made for a client who specializes in hairdressing. Made to showcase her abilities and inform potential customers of her available services.",
@@ -9,7 +9,7 @@ export const projects = [
     gitHub: "https://github.com/kmmoody212/hair-by-glinda",
   },
   {
-    image: "screenshot",
+    image: "screenshot here",
     title: "Client Portfolio",
     role: "Developer",
     desc: "A website portfolio made for a client.",
@@ -18,7 +18,7 @@ export const projects = [
     gitHub: "https://github.com/kmmoody212/zp-portfolio",
   },
   {
-    image: "screenshot",
+    image: "screenshot here",
     title: "Calculator",
     role: "Developer",
     desc: "A calculator coded mostly with JavaScript that doesn't use the eval() method. ",
@@ -27,7 +27,7 @@ export const projects = [
     gitHub: "https://github.com/kmmoody212/calculator",
   },
   {
-    image: "screenshot",
+    image: "screenshot here",
     title: "Tic-Tac-Toe",
     role: "Developer",
     desc: "A simple and fun spin on the classic game tic-tac-toe. ",
@@ -36,7 +36,7 @@ export const projects = [
     gitHub: "https://github.com/kmmoody212/tic-tac-toe",
   },
   {
-    image: "screenshot",
+    image: "screenshot here",
     title: "TriFrame Real Estate Photography",
     role: "Developer",
     desc: "A website created for a client's business to attract customers.",
