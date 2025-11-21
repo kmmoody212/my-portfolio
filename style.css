@@ -94,16 +94,13 @@ a {
     rgba(229, 206, 194, 1) 0%,
     rgba(245, 250, 255, 1) 100%
   );
-  /* padding: 2rem; */
   border-radius: 8px;
-  /* display: flex; try making this a grid */
-  /* min-height: 400px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 2fr;
   grid-template-rows: repeat(5, 100px);
 }
 
-.title {
+.about-title {
   margin: 0;
   font-family: "Inconsolata", monospace;
   font-weight: 400;
@@ -188,55 +185,86 @@ a {
 /* /////////// PROJECTS //////////// */
 #projects-container {
   color: white;
+  padding: 10vh 0;
 }
 
-.carousel-wrapper {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.proj-title {
+  margin: 0;
+  padding: 0px 0px 24px 10vw;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+}
+
+.swiper {
   display: flex;
   align-items: center;
 }
 
-.carousel-track {
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--secondary-color);
+  padding: 16px;
+  background-color: var(--accent-color);
+  border-radius: 180px;
+  width: 34px;
+  height: 30px;
+}
+
+.swiper-button-next {
+  padding: 16px 12px 16px 16px;
+}
+
+.swiper-button-prev {
+  padding: 16px 16px 16px 12px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 30px; /* default is about 20px */
+}
+
+.swiper-pagination {
+  padding: 18px 0;
+  /* border: 2px solid purple; */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.swiper-wrapper {
+  width: fit-content;
+  padding: 20px 0px;
+  align-items: center;
+  /* border: 2px solid blue; */
+}
+
+.swiper-slide {
   display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 1rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24vw;
+  /* border: 2px solid red; */
 }
 
-.carousel-track::-webkit-scrollbar {
-  display: none;
-}
-
-.carousel-btn {
-  background: #ddd;
-  border: none;
-  font-size: 2rem;
-  padding: 0.5rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.carousel-btn:hover {
-  background: #ccc;
-}
-
-.project-card {
-  min-width: 300px;
-  flex-shrink: 1;
+.swiper-slide-next,
+.swiper-slide-prev {
+  opacity: 0.7;
 }
 
 .proj-image {
+  width: 100%;
+  padding: 100px 0;
   border: 2px solid white;
 }
 
 .card-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 4px 8px;
   border: 2px solid white;
 }
 
@@ -246,7 +274,7 @@ a {
 }
 
 .top-line * {
-  margin: 0;
+  margin: 10px;
   padding: 4px 0 0 0;
 }
 
@@ -255,23 +283,23 @@ a {
 }
 
 .desc-title {
-  margin: 16px 0 0 0;
+  margin: 16px 0 0 10px;
 }
 
 .proj-desc {
   font-size: 0.85rem;
   padding-top: 4px;
-  margin: 0;
+  margin: 10px;
 }
 
 .tech-title {
-  margin: 16px 0 0 0;
+  margin: 10px;
 }
 
 .proj-tech {
   font-size: 0.85rem;
   padding-top: 4px;
-  margin: 0;
+  margin: 10px;
 }
 
 .proj-links {

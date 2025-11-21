@@ -41,7 +41,7 @@
 
     <!-- ////////// ABOUT SECTION //////////  -->
     <section id="about">
-      <h3 class="title">ABOUT</h3>
+      <h3 class="about-title">ABOUT</h3>
       <div class="y-line"></div>
       <h2 class="about-sub">A Little About Me</h2>
 
@@ -72,15 +72,14 @@
     <!-- ////////// PROJECTS SECTION //////////// -->
 
     <section id="projects-container">
-      <h4 class="title">PROJECTS</h4>
+      <h3 class="proj-title">PROJECTS</h3>
       <div class="swiper">
-        <!-- slider main container -->
         <div class="swiper-wrapper" id="swiper-wrapper">
           <!-- swiper-slide 's go in here -->
         </div>
-        <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -128,8 +127,14 @@
 
       // Initialize Swiper
       new Swiper(".swiper", {
-        slidesPerView: 1,
-        spaceBetween: 20,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 50,
+        effect: "coverflow",
+        coverflowEffect: {
+          rotate: 25,
+        },
+
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -137,11 +142,6 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
-        },
-        breakpoints: {
-          640: { slidesPerView: 1.25 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
         },
       });
     </script>
