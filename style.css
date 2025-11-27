@@ -391,14 +391,23 @@ a {
   justify-content: space-between;
 }
 
-/* /////////// CONTACT ///////////// */
+/* ////////////////// CONTACT //////////////////// */
 #contact {
+  color: white;
+  padding: 10vh 0;
+}
+
+.contact-title {
+  margin: 0;
+  padding: 0px 0px 24px 10vw;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+}
+
+.contact-container {
   display: flex;
   justify-content: space-evenly;
-  width: 70vw;
-  margin: auto;
-  padding: 6% 0;
-  color: white;
 }
 
 form {
@@ -409,12 +418,9 @@ form {
   height: 45vh;
 }
 
-.contact-right {
-  border: 2px solid green;
-}
-
-.contact-right * {
-  border: 1px solid lightskyblue;
+.contact-desc {
+  max-width: 20vw;
+  line-height: 1.5;
 }
 
 /* //////////// FOOTER ////////// */
