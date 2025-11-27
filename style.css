@@ -84,9 +84,9 @@ a {
   cursor: pointer;
 }
 
-/* //////////// ABOUT //////////// */
+/* /////////////////// ABOUT /////////////////// */
 #about {
-  width: 65vw;
+  width: 80vw;
   margin: 3% auto;
   background: #e5cec2;
   background: linear-gradient(
@@ -180,9 +180,13 @@ a {
   height: 60%;
   align-self: center;
   justify-self: center;
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  border-radius: 18px;
 }
 
-/* /////////// PROJECTS //////////// */
+/* ////////////////// PROJECTS /////////////////// */
 #projects-container {
   color: white;
   padding: 10vh 0;
@@ -314,43 +318,57 @@ a {
   margin: auto 16px;
 }
 
-/* /////////// SKILLS ///////////// */
+/* /////////////////// SKILLS //////////////////// */
 #skills {
+  margin: auto;
+  padding: 3% 0;
+  background: #f5faff;
+  background: linear-gradient(
+    157deg,
+    rgba(245, 250, 255, 1) 0%,
+    rgba(217, 203, 199, 1) 39%,
+    rgba(199, 175, 165, 1) 72%,
+    rgba(136, 136, 140, 1) 100%
+  );
+}
+
+.skills-title {
+  margin: 0;
+  padding: 24px 0px 24px 10vw;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+}
+
+.skills-list-container {
   display: flex;
   justify-content: space-evenly;
-  margin: auto;
-  width: 80vw;
-  height: 30vh;
-  padding: 3% 0;
-  background-color: var(--secondary-color);
+  padding: 1rem 2rem;
 }
 
-.left {
+.skills-left {
+  max-width: 30%;
+}
+
+#tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  gap: 1rem;
+}
+
+.tech-skill {
   display: flex;
   flex-direction: column;
-  border: 2px solid green;
-  justify-content: space-around;
-  width: 45%;
-}
-
-.left * {
-  border: 1px solid lightblue;
-}
-
-.left .heading {
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 4px;
-}
-
-.left .skills-desc {
-  font-size: 2rem;
-  flex-wrap: wrap;
-}
-
-.right {
-  border: 2px solid green;
-  width: 45%;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  text-align: center;
+  background-color: rgba(70, 70, 77, 0.034);
+  border-radius: 18px;
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
 }
 
 /* /////////// CONTACT ///////////// */
