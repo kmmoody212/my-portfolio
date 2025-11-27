@@ -125,6 +125,7 @@ a {
 .about-sub {
   grid-area: 1 / 3 / 2 / span 2;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-weight: bold;
   align-self: end;
 }
 
@@ -320,6 +321,7 @@ a {
 
 /* /////////////////// SKILLS //////////////////// */
 #skills {
+  width: 80vw;
   margin: auto;
   padding: 3% 0;
   background: #f5faff;
@@ -330,11 +332,12 @@ a {
     rgba(199, 175, 165, 1) 72%,
     rgba(136, 136, 140, 1) 100%
   );
+  border-radius: 8px;
 }
 
 .skills-title {
   margin: 0;
-  padding: 24px 0px 24px 10vw;
+  padding: 1rem 5vw;
   font-family: "Inconsolata", monospace;
   font-weight: 400;
   letter-spacing: 0.25rem;
@@ -343,11 +346,11 @@ a {
 .skills-list-container {
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem 2rem;
+  padding: 2rem;
 }
 
 .skills-left {
-  max-width: 30%;
+  max-width: 40%;
 }
 
 #tech-list {
@@ -369,6 +372,23 @@ a {
   border-radius: 18px;
   padding-top: 1rem;
   padding-bottom: 0.8rem;
+}
+
+.skills-right {
+  min-width: 30%;
+}
+
+#soft-list {
+  padding-left: 1rem;
+}
+
+.soft-skill {
+  padding: 1rem;
+  background-color: rgba(70, 70, 77, 0.034);
+  border-radius: 18px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* /////////// CONTACT ///////////// */
