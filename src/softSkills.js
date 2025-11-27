@@ -17,6 +17,30 @@ const softSkills = [
     icon: "#",
     name: "Effective Communication",
   },
+  {
+    icon: "#",
+    name: "Agile Project Management",
+  },
+  {
+    icon: "#",
+    name: "Data Analysis",
+  },
+  {
+    icon: "#",
+    name: "Reporting",
+  },
+  {
+    icon: "#",
+    name: "Attention to Detail",
+  },
+  {
+    icon: "#",
+    name: "Problem Solving",
+  },
+  {
+    icon: "#",
+    name: "Continuous Learning",
+  },
 ];
 
 export function renderSoftSkills() {
