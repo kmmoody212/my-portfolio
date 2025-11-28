@@ -1,6 +1,23 @@
 export const projects = [
   {
     image: "screenshot here",
+    title: "Calculator",
+    role: "Developer",
+    desc: "A calculator coded mostly with JavaScript that doesn't use the eval() method. ",
+    tech: "HTML, CSS, JavaScript",
+    live: "https://kmmoody212.github.io/calculator/",
+    gitHub: "https://github.com/kmmoody212/calculator",
+  },
+  {
+    image: "screenshot here",
+    title: "TriFrame Real Estate Photography",
+    role: "Developer",
+    desc: "A website created for a client's business to attract customers.",
+    tech: "WordPress",
+    live: "https://triframenc.com/",
+  },
+  {
+    image: "screenshot here",
     title: "Hair By Glinda",
     role: "Developer",
     desc: "A website made for a client who specializes in hairdressing. Made to showcase her abilities and inform potential customers of her available services.",
@@ -17,15 +34,7 @@ export const projects = [
     live: "https://zackpadgett.netlify.app/",
     gitHub: "https://github.com/kmmoody212/zp-portfolio",
   },
-  {
-    image: "screenshot here",
-    title: "Calculator",
-    role: "Developer",
-    desc: "A calculator coded mostly with JavaScript that doesn't use the eval() method. ",
-    tech: "HTML, CSS, JavaScript",
-    live: "https://kmmoody212.github.io/calculator/",
-    gitHub: "https://github.com/kmmoody212/calculator",
-  },
+
   {
     image: "screenshot here",
     title: "Tic-Tac-Toe",
@@ -34,13 +43,5 @@ export const projects = [
     tech: "HTML, CSS, JavaScript",
     live: "https://kmmoody212.github.io/tic-tac-toe/",
     gitHub: "https://github.com/kmmoody212/tic-tac-toe",
-  },
-  {
-    image: "screenshot here",
-    title: "TriFrame Real Estate Photography",
-    role: "Developer",
-    desc: "A website created for a client's business to attract customers.",
-    tech: "WordPress",
-    live: "https://triframenc.com/",
   },
 ];

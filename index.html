@@ -77,9 +77,9 @@
         <div class="swiper-wrapper" id="swiper-wrapper">
           <!-- swiper-slide 's go in here -->
         </div>
+        <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -143,11 +143,17 @@
       new Swiper(".swiper", {
         slidesPerView: "auto",
         centeredSlides: true,
-        spaceBetween: 50,
+        initialSlide: 2,
+        spaceBetween: 100,
         effect: "coverflow",
+        centerInsufficientSlides: true, //new
         coverflowEffect: {
           rotate: 25,
+          slideShadows: true,
         },
+        rewind: true,
+        observer: true,
+        preventClicks: true,
 
         navigation: {
           nextEl: ".swiper-button-next",

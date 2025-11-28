@@ -13,7 +13,3 @@ document.addEventListener("DOMContentLoaded", () => {
   renderTechSkills();
   renderSoftSkills();
 });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   return techs;
-// });
