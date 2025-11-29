@@ -15,8 +15,12 @@ export function renderCard({ image, title, role, desc, tech, live, gitHub }) {
         <p class="proj-tech">${tech}</p>
     </div>
     <div class="proj-links">
-      <a href="${live}" target="_blank" rel="noopener noreferrer">Website</a>
-      <a href="${gitHub}" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+      <a href="${live}" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/icons/scalable.png" style="width: 40px; height: auto;"/><span>Deployed Site</span>
+      </a>
+      <a href="${gitHub}" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/icons/github.png" style="width: 40px; height: auto;"/><span>GitHub Repo</span>
+      </a>
     </div>
     `;
 
