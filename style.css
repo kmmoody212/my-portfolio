@@ -212,7 +212,7 @@ nav > h1 {
 
 .swiper {
   margin-top: 2vh;
-  min-height: 75vh;
+  min-height: 70vh;
 }
 
 .swiper-wrapper {
@@ -260,6 +260,7 @@ nav > h1 {
 
 .swiper-pagination {
   padding: 18px 0;
+  margin-bottom: 50px;
   /* border: 2px solid purple; */
 }
 
@@ -269,7 +270,10 @@ nav > h1 {
 
 .proj-image {
   width: 100%;
-  padding: 100px 0;
+  height:250px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   border: 2px solid white;
 }
 
@@ -379,9 +383,15 @@ nav > h1 {
   width: 100px;
   text-align: center;
   background-color: rgba(70, 70, 77, 0.034);
+  transition: background-color 0.5s ease-out;
   border-radius: 18px;
   padding-top: 1rem;
   padding-bottom: 0.8rem;
+}
+
+.tech-skill:hover {
+  background-color: #89a6b0b0;
+  transition: background-color 0.1s ease-in;
 }
 
 .skills-right {
@@ -395,10 +405,16 @@ nav > h1 {
 .soft-skill {
   padding: 1rem;
   background-color: rgba(70, 70, 77, 0.034);
+  transition: background-color 0.5s ease-out;
   border-radius: 18px;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
+}
+
+.soft-skill:hover {
+  background-color: #89a6b0b0;
+  transition: background-color 0.1s ease-in;
 }
 
 /* ////////////////// CONTACT //////////////////// */

@@ -3,7 +3,7 @@ export function renderCard({ image, title, role, desc, tech, live, gitHub }) {
   card.classList.add("swiper-slide");
 
   card.innerHTML = `
-    <div class="proj-image">${image}</div>
+    <img class="proj-image" src="${image}" alt="Image of ${title} Website"></img>
     <div class="card-content">
       <div class="top-line">
         <h4>${title}</h4>
@@ -16,7 +16,7 @@ export function renderCard({ image, title, role, desc, tech, live, gitHub }) {
     </div>
     <div class="proj-links">
       <a href="${live}" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/icons/scalable.png" style="width: 40px; height: auto;"/><span>Deployed Site</span>
+        <img src="./assets/icons/web.png" style="width: 40px; height: auto;"/><span>Deployed Site</span>
       </a>
       <a href="${gitHub}" target="_blank" rel="noopener noreferrer">
         <img src="./assets/icons/github.png" style="width: 40px; height: auto;"/><span>GitHub Repo</span>

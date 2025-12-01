@@ -1,6 +1,6 @@
 export const projects = [
   {
-    image: "screenshot here",
+    image: "./assets/calc.png",
     title: "Calculator",
     role: "Developer",
     desc: "A calculator coded mostly with JavaScript that doesn't use the eval() method. ",
@@ -9,7 +9,7 @@ export const projects = [
     gitHub: "https://github.com/kmmoody212/calculator",
   },
   {
-    image: "screenshot here",
+    image: "./assets/triframe.png",
     title: "TriFrame Real Estate Photography",
     role: "Developer",
     desc: "A website created for a client's business to attract customers.",
@@ -17,7 +17,7 @@ export const projects = [
     live: "https://triframenc.com/",
   },
   {
-    image: "screenshot here",
+    image: "./assets/hairbyglinda.png",
     title: "Hair By Glinda",
     role: "Developer",
     desc: "A website made for a client who specializes in hairdressing. Made to showcase her abilities and inform potential customers of her available services.",
@@ -26,7 +26,7 @@ export const projects = [
     gitHub: "https://github.com/kmmoody212/hair-by-glinda",
   },
   {
-    image: "screenshot here",
+    image: "./assets/zpadgett.png",
     title: "Client Portfolio",
     role: "Developer",
     desc: "A website portfolio made for a client.",
@@ -36,7 +36,7 @@ export const projects = [
   },
 
   {
-    image: "screenshot here",
+    image: "./assets/tictactoe.png",
     title: "Tic-Tac-Toe",
     role: "Developer",
     desc: "A simple and fun spin on the classic game tic-tac-toe. ",
