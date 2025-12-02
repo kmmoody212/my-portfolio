@@ -14,31 +14,31 @@ function skillTemplate({ icon, name }) {
 
 const softSkills = [
   {
-    icon: "#",
+    icon: "./assets/icons/comms.png",
     name: "Effective Communication",
   },
   {
-    icon: "#",
+    icon: "./assets/icons/agile.png",
     name: "Agile Project Management",
   },
   {
-    icon: "#",
+    icon: "./assets/icons/data.png",
     name: "Data Analysis",
   },
   {
-    icon: "#",
+    icon: "./assets/icons/report.png",
     name: "Reporting",
   },
   {
-    icon: "#",
+    icon: "./assets/icons/detail.png",
     name: "Attention to Detail",
   },
   {
-    icon: "#",
+    icon: "./assets/icons/problem.png",
     name: "Problem Solving",
   },
   {
-    icon: "#",
+    icon: "./assets/icons/learn.png",
     name: "Continuous Learning",
   },
 ];

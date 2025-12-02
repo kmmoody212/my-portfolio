@@ -395,21 +395,29 @@ nav > h1 {
 }
 
 .skills-right {
-  min-width: 30%;
+  max-width: 40%;
 }
 
 #soft-list {
-  padding-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  gap: 1rem;
 }
 
 .soft-skill {
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  text-align: center;
   background-color: rgba(70, 70, 77, 0.034);
   transition: background-color 0.5s ease-out;
   border-radius: 18px;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
+  padding: 1rem 0.5rem;
 }
 
 .soft-skill:hover {
