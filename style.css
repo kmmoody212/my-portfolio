@@ -199,7 +199,7 @@ nav > h1 {
 /* ////////////////// PROJECTS /////////////////// */
 #projects-container {
   color: white;
-  padding: 10vh 0;
+  padding: 8vh 0;
 }
 
 .proj-title {
@@ -335,7 +335,7 @@ nav > h1 {
 /* /////////////////// SKILLS //////////////////// */
 #skills {
   width: 80vw;
-  margin: auto;
+  margin: 3% auto;
   padding: 3% 0;
   background: #f5faff;
   background: linear-gradient(
@@ -427,7 +427,7 @@ nav > h1 {
 /* ////////////////// CONTACT //////////////////// */
 #contact {
   color: white;
-  padding: 10vh 0;
+  padding: 8vh 0;
 }
 
 .contact-title {
