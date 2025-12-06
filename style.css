@@ -143,6 +143,10 @@ nav > h1 {
 .fact-icon2,
 .fact-icon3 {
   align-self: center;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2a525f;
 }
 
 .fact-icon1 {
@@ -173,6 +177,15 @@ nav > h1 {
 
 .fact-desc3 {
   grid-area: 4 / 3 / 5 / span 2;
+}
+
+.x-top {
+  grid-area: 1 / 2 / 2 / span 3;
+  padding: 1px;
+  height: 1px;
+  background-color: var(--accent-color);
+  margin: 0 50px 0 0;
+  align-self: center;
 }
 
 .x-line {
@@ -457,7 +470,6 @@ form {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 45vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   justify-content: center;
 }
