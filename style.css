@@ -22,6 +22,14 @@ header {
   background-repeat: no-repeat;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
 /* //////////// NAVBAR ///////////// */
 nav {
   margin: auto;
@@ -49,6 +57,7 @@ nav > h1 {
   text-align: center;
   text-decoration: none;
   color: var(--text-color);
+  scroll-behavior: smooth;
 }
 
 .nav-links *:hover {
@@ -199,14 +208,19 @@ nav > h1 {
 
 .resume {
   grid-area: 5 / 4 / 6 / 5;
-  width: 50%;
-  height: 60%;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
   align-self: center;
   justify-self: center;
   background-color: var(--accent-color);
   border: none;
   color: white;
   border-radius: 18px;
+}
+
+.resume:hover {
+  background-color: #2a525f;
 }
 
 /* ////////////////// PROJECTS /////////////////// */
