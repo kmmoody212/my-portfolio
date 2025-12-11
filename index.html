@@ -19,7 +19,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
     </style>
 
-    <title>Katrina Moody Portfolio</title>
+    <title>Katrina Moody - Portfolio</title>
   </head>
   <body>
     <header>
@@ -119,15 +119,20 @@
           additional questions, feel free to send me a message here. I'll
           respond as soon as possible!
         </div>
-        <form>
+        <form
+          action="https://formsubmit.co/9ab51d5cc46feeebf9c2665f5daac0e5"
+          method="POST"
+        >
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" />
+          <input type="text" id="name" name="name" required />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" />
+          <input type="email" id="email" name="email" required />
 
           <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
+          <textarea id="message" name="message" required></textarea>
+
+          <input type="hidden" name="_captcha" value="false" />
 
           <button type="submit" id="contact-btn">SEND</button>
         </form>
